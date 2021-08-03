@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './pages/home.dart';
+import 'package:fluent_io/stateful_widgets/home.dart';
 
 void main() => runApp(Root());
 
@@ -10,11 +10,9 @@ class Root extends StatelessWidget {
     return MaterialApp(
       title: 'Fluent.io',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.orange,
       ),
-      home: Home(title: 'Home - Search'),
+      home: Home(),
     );
   }
 }
-
-
